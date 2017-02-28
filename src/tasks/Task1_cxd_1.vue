@@ -1,12 +1,15 @@
 <template>
-	<div class="main">	
-		<div class="welcome">
-			<h3 class="title">
-				欢迎参加百度技术学院
-			</h3>
-			<a class="link" href="">点击进入</a>
+	<div>
+		<div class="main">	
+			<div class="welcome">
+				<h3 class="title">
+					欢迎参加百度技术学院
+				</h3>
+				<a class="link" href="">点击进入</a>
+			</div>
+			<img class="bg" src="http://p1.bqimg.com/567571/2d3f9d971b09e2b4.jpg">
 		</div>
-		<img class="bg" src="http://p1.bqimg.com/567571/2d3f9d971b09e2b4.jpg">
+		<a class="other-link" target="_blank" href="http://jsrun.net/VHpKp/edit">SVG的实现文字流光动画</a>
 	</div>
 </template>
 
@@ -97,4 +100,15 @@ mixin-common-transition()
 		text-decoration: none
 		z-index: 10
 		cursor: pointer
+
+.other-link
+	display: block
+	margin: 0 auto
+	padding: 5px 10px
+	width: 200px
+	height: 20px
+	text-align: center
+	border: 1px solid #aaa
+	&:hover
+		border: 1px solid #333;
 </style>
