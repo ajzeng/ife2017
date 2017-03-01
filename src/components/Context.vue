@@ -5,8 +5,8 @@
       <router-link to="/task1" tag="li" class="item">
         <a class="text">有趣的鼠标悬浮模糊效果</a>
       </router-link>
-      <router-link to="" tag="li" class="item">
-        <a class="text">这是个空链接</a>
+      <router-link to="/task2" tag="li" class="item">
+        <a class="text">CSS3饼状loading效果</a>
       </router-link>
       <router-link to="" tag="li" class="item">
         <a class="text">这是个空链接</a>
