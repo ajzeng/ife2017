@@ -83,7 +83,7 @@ export default {
       this.config.transitionDuration = this._transtionDurationCopy
       this.rotateY += this.averageAngle * direction
       // 调用计数器次数增加1次
-      let counter = this.switchImageCounter(1)
+      let counter = this.switchImageCounter(1 * direction)
       // 如果旋转了一周后，将rotateY重置
       if (counter === 0) {
         // 重置时候transition-duration设置为0，即不要有过渡

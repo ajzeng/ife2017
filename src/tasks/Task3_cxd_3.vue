@@ -22,7 +22,7 @@ export default {
         imageDistance: 100, // 该值越大，2个image之间的距离越大, 单位px
         transitionDuration: 1000, // image完成一次切换设置的过渡时间,单位ms
         animationDuration: 2000, // image完成一次切换需要的总时间,单位ms
-        animationDirection: -1, // 1代表向右旋转，-1代表向左旋转
+        animationDirection: 1, // 1代表向右旋转，-1代表向左旋转
         perspective: 2000 // 就是perspective,单位px
       },
       urls: ['https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3346899083,378209289&fm=23&gp=0.jpg',
