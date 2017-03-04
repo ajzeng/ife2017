@@ -30,9 +30,9 @@ export default {
         'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1556026799,127855153&fm=23&gp=0.jpg',
         'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=438155865,1502224858&fm=23&gp=0.jpg',
         'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2414460273,1885753838&fm=23&gp=0.jpg',
-        'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4294606076,2616318684&fm=23&gp=0.jpg'
-        // 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1155387389,1530103222&fm=23&gp=0.jpg',
-        // 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=601266480,2228607274&fm=23&gp=0.jpg'
+        'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4294606076,2616318684&fm=23&gp=0.jpg',
+        'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1155387389,1530103222&fm=23&gp=0.jpg',
+        'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=601266480,2228607274&fm=23&gp=0.jpg'
       ]
     }
   },
