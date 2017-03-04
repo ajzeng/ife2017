@@ -17,8 +17,8 @@ export default {
     return {
       animationStatus: 'paused',
       options: {
-        imageWidth: 400, // image width为400px
-        imageHeight: 200, // image height为200px
+        imageWidth: 300, // image width为400px
+        imageHeight: 150, // image height为200px
         imageDistance: 100, // 该值越大，2个image之间的距离越大, 单位px
         transitionDuration: 1000, // image完成一次切换设置的过渡时间,单位ms
         animationDuration: 2000, // image完成一次切换需要的总时间,单位ms

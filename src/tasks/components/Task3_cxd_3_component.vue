@@ -33,7 +33,6 @@ export default {
     let len = this.len = parseFloat(this.imageUrls.length)
     let averageAngle = this.averageAngle = parseFloat(360 / len)
     let translateZ = ((0.5 * imageWidth / Math.tan(Math.PI * averageAngle / 180 / 2)) + this.config.imageDistance).toFixed(2)
-    console.log(translateZ)
     // 初始化cameraStyleObject
     // 验证是不是百分数
     let re = /^((\d+\.?\d*)|(\d*\.?\d+))%$/
@@ -81,25 +80,16 @@ export default {
         throw new Error('direction error: should be 1 or -1')
       }
       this.config.transitionDuration = this._transtionDurationCopy
-      this.rotateY += this.averageAngle * direction
-      // 调用计数器次数增加1次
-      let counter = this.switchImageCounter(1 * direction)
-      // 如果旋转了一周后，将rotateY重置
-      if (counter === 0) {
+      let rotate = this.rotateY += this.averageAngle * direction
+      // 如果旋转了1000周后，将rotateY重置, 防止js数值计算不准确，做了加减1处理
+      let ANGEL = 360 * 1000
+      if ((rotate + 1) > ANGEL || (rotate - 1) < -ANGEL) {
         // 重置时候transition-duration设置为0，即不要有过渡
         setTimeout(() => {
           this.config.transitionDuration = 0
-          this.rotateY -= 360 * direction
+          this.rotateY = 0
         }, this._transtionDurationCopy)
       }
-    },
-    // 这个函数是获取旋转次数对图片长度的模，目的是判断是否旋转了一周
-    switchImageCounter (num) {
-      num = num || 0
-      this.switchImage.counter || (this.switchImage.counter = 0)
-      this.switchImage.counter += num
-      this.switchImage.counter %= this.len
-      return this.switchImage.counter
     }
   },
   computed: {
