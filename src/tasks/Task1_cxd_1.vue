@@ -18,7 +18,7 @@
 	}
 </script>
 
-<style type="text/css" lang="styl">
+<style type="text/css" lang="styl" scoped>
 mixin-common-transition()
 	transition: all 0.5s ease
 @keyframes text-streamer

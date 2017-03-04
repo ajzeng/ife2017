@@ -8,8 +8,8 @@
       <router-link to="/task2" tag="li" class="item">
         <a class="text">CSS3饼状loading效果</a>
       </router-link>
-      <router-link to="" tag="li" class="item">
-        <a class="text">这是个空链接</a>
+      <router-link to="/task3" tag="li" class="item">
+        <a class="text">CSS3实现3D 轮播图</a>
       </router-link>
       <router-link to="" tag="li" class="item">
         <a class="text">这是个空链接</a>
@@ -31,6 +31,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+li {
+  list-style: decimal inside;
+}
 .hello {
   margin: 0 auto;
   text-align: center;

@@ -10,7 +10,7 @@
 	}
 </script>
 
-<style type="text/css" lang="styl">
+<style type="text/css" lang="styl" scoped>
 	$hollow-box-size = 160px
 	$inner-box-size = 100px
 	$two-box-distance = ($hollow-box-size - $inner-box-size) / 2
